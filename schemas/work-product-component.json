@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OSDU WorkProductComponent",
+  "type": "object",
+  "description": "Placeholder for the official OSDU WorkProductComponent schema.",
+  "properties": {
+    "kind": {
+      "type": "string"
+    },
+    "acl": {
+      "type": "object"
+    },
+    "legal": {
+      "type": "object"
+    },
+    "data": {
+      "type": "array"
+    }
+  },
+  "required": ["kind", "acl", "legal", "data"]
+}

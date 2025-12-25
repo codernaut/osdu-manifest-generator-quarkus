@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<witsml version="1.4.1">
+    <log uid="log-volve-001" uidWell="volve-well" uidWellbore="volve-wellbore">
+        <name>Volve GR Log</name>
+        <nameWell>Volve Well</nameWell>
+        <nameWellbore>Volve Wellbore</nameWellbore>
+        <serviceCompany>Example Service Company</serviceCompany>
+        <runNumber>42</runNumber>
+        <indexType>time</indexType>
+        <startIndex>2025-01-01T00:00:00Z</startIndex>
+        <endIndex>2025-01-02T00:00:00Z</endIndex>
+        <dateCreation>2024-12-31T23:59:59Z</dateCreation>
+        <dateTimeLastChange>2025-01-03T12:30:00Z</dateTimeLastChange>
+    </log>
+</witsml>
