@@ -1,0 +1,58 @@
+.idea/
+*.iml
+.idea_modules/
+*.ipr
+*.iws
+.ijwb/
+.run/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.loadpath
+rebel.xml
+.factorypath
+.externalToolBuilders/
+*.launch
+bin/
+
+# VS Code
+.vscode/
+.history/
+.code-workspace
+
+# Maven
+/target/
+**/target/
+.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+dependency-reduced-pom.xml
+.mvn/timing.properties
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+hs_err_pid*
+
+# IntelliJ run configs
+out/
+
+# Quarkus
+.quarkus/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# Editors
+*.swp
+*.swo
+*~
