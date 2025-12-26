@@ -10,6 +10,8 @@ A Quarkus-native CLI that automates schema validation, parses WITSML logs, and p
 
 ## Architecture Overview
 
+The CLI is composed of modular services that parse WITSML documents, shape metadata, and persist manifests.
+
 ```mermaid
 flowchart TD
 	A[Operator CLI Invocation] --> B[ManifestCommand]
@@ -19,6 +21,16 @@ flowchart TD
 	E --> F[Manifest JSON Output]
 	C --> G[Validation Errors]
 	G -->|Exceptions| B
+```
+
+The same pipeline can be viewed end-to-end from field acquisition through validation feedback loops:
+
+```mermaid
+graph LR
+    A[Rig Sensor / WITSML] -->|Raw XML| B(Quarkus CLI App)
+    B -->|Validate| C{Schema Check}
+    C -->|Valid| D[OSDU Manifest JSON]
+    C -->|Invalid| E[Error Queue]
 ```
 
 ### Component Responsibilities
